@@ -6,3 +6,7 @@ venv/
 envs/
 data/
 qdrant_storage/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

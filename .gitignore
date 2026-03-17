@@ -1,47 +1,33 @@
+# 系统
+.DS_Store
+.Trash
+Library/
+
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.sqlite3
-
-# Virtual environment
-.venv/
-venv/
-env/
-
-# Python build
-build/
-dist/
-*.egg-info/
-
-# Logs
-*.log
-
-# Environment variables
 .env
-
-# MacOS
-.DS_Store
-
-# Jupyter
-.ipynb_checkpoints
+.venv
+venv/
+ai-env/
 
 # Node
 node_modules/
 
-# Next.js
-.next/
+# 数据库
+*.db
+*.sqlite
 
-# Docker
-docker-data/
+# 日志
+*.log
 
-# Large data
-data/
-datasets/
-models/
+# secrets
+.env*
+*.key
+*.pem
+*.json
 
-# IDE
-.vscode/
-.idea/
+# Mac
+*.swp

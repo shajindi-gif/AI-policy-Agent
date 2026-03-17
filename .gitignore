@@ -1,33 +1,8 @@
-# 系统
-.DS_Store
-.Trash
-Library/
-
-# Python
+.env
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-.env
-.venv
-venv/
-ai-env/
-
-# Node
 node_modules/
-
-# 数据库
-*.db
-*.sqlite
-
-# 日志
-*.log
-
-# secrets
-.env*
-*.key
-*.pem
-*.json
-
-# Mac
-*.swp
+venv/
+envs/
+data/
+qdrant_storage/

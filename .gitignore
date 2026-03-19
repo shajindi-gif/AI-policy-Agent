@@ -3,6 +3,6 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+.vscode/
 node_modules/
 docker_data/
-.vscode/

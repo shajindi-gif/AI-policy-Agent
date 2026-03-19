@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import router
 
-app = FastAPI(title="AI Policy Platform")
+app = FastAPI(title="AI-policy-Agent")
 
 app.add_middleware(
     CORSMiddleware,

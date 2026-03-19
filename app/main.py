@@ -20,4 +20,4 @@ def health():
 
 @app.get("/")
 def root():
-    return {"message": "AI Policy Platform is running"}
+    return {"message": "AI-policy-Agent is running"}

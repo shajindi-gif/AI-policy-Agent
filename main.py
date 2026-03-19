@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.api.routes import router
 
-app = FastAPI(title="AI Policy Platform")
+app = FastAPI(title="AI-policy-Agent")
 
 app.include_router(router)
 

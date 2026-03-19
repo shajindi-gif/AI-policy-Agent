@@ -1,34 +1,151 @@
 # AI Policy Platform
 
-AI-powered industrial park policy intelligence platform for 招商、政策匹配与补贴申报自动化。
+AI Policy Platform 是一个面向产业园区、企业服务机构和招商团队的政策智能决策平台，聚焦于 **政策解析、企业匹配、补贴申报辅助和园区招商智能化**。
 
-## Features
-- Policy document parsing
-- Intelligent policy matching
-- Subsidy application drafting
-- Enterprise recommendation engine
+---
 
-## Architecture
-- FastAPI backend
-- Qdrant vector database
-- LLM-powered agents
+## 1. 项目背景
 
-## Tech Stack
-- Python
-- FastAPI
-- Docker
-- Qdrant
-- OpenAI / DeepSeek
+当前产业政策、园区扶持政策、专项补贴政策分散在各级政府网站、园区公告、通知文件与实施细则中，存在以下问题：
 
-## Use Cases
-- Industrial park 招商
-- 企业政策匹配
-- 补贴申报自动化
+- 政策信息分散，检索成本高
+- 企业难以快速判断“自己能不能申报”
+- 园区和招商主管难以高效匹配企业与政策
+- 补贴申报材料准备复杂、重复劳动多
+- 政策口径、申报条件、材料要求更新频繁
 
-## Roadmap
-- [ ] MVP launch
-- [ ] Multi-city policy ingestion
-- [ ] SaaS version
+本项目希望通过 AI + 规则引擎 + 检索增强生成（RAG）的方式，构建一个可扩展的政策智能服务平台。
 
-## Founder
-Sadie | PKU Sociology | AI + Finance + Policy
+---
+
+## 2. 核心功能
+
+### 政策文档解析
+- 解析政府公告、园区通知、扶持办法、实施细则
+- 提取申报条件、支持对象、补贴额度、时间节点、所需材料
+
+### 企业政策匹配
+- 根据企业画像进行政策适配推荐
+- 输出可申报政策清单与优先级建议
+
+### 补贴申报辅助
+- 辅助生成申报材料框架
+- 输出申报要点、材料清单、撰写建议
+
+### 园区招商支持
+- 帮助园区对潜在企业进行政策适配分析
+- 提高招商线索转化效率
+
+---
+
+## 3. 目标用户
+
+- 产业园区运营方
+- 地方招商部门
+- 企业服务机构
+- 科技型中小企业
+- 政策咨询与申报服务团队
+
+---
+
+## 4. 技术架构
+
+当前项目为 MVP 版本，核心技术方向包括：
+
+- **FastAPI**：提供 API 服务
+- **PostgreSQL / SQL schema**：结构化存储
+- **Celery / Task pipeline**：异步任务处理
+- **Docker Compose**：本地容器化部署
+- **LLM / Agent**：政策理解与辅助生成
+- **向量数据库（后续接入 Qdrant）**：支持政策语义检索
+
+---
+
+## 5. 项目结构
+
+```bash
+ai-policy-platform/
+├── app/
+│   ├── main.py
+│   ├── api/
+│   ├── core/
+│   ├── models/
+│   ├── services/
+│   └── tasks/
+├── scripts/
+├── docs/
+├── data/
+├── tests/
+├── docker-compose.yml
+├── requirements.txt
+├── schema.sql
+└── README.md
+6. 本地启动
+方式一：Python 本地运行
+pip install -r requirements.txt
+python app/main.py
+方式二：Docker Compose
+docker-compose up --build
+7. 产品路线图
+Phase 1：MVP
+
+ 基础项目结构搭建
+
+ 数据库与任务模块初步搭建
+
+ README 与仓库展示整理
+
+ 基础政策解析接口
+
+ 企业画像输入与匹配逻辑
+
+Phase 2：政策智能匹配
+
+ 政策文档切分与结构化抽取
+
+ 企业标签体系
+
+ 政策推荐评分引擎
+
+Phase 3：申报辅助自动化
+
+ 材料清单生成
+
+ 申报文本辅助撰写
+
+ 多城市政策库接入
+
+Phase 4：SaaS 化
+
+ 多租户管理
+
+ 用户后台
+
+ 园区版本 / 企业版本产品化
+
+8. 应用场景
+
+园区招商时快速判断企业适配哪些政策
+
+企业评估自身可申请的补贴项目
+
+咨询机构批量处理政策申报需求
+
+园区建立本地产业政策知识库
+
+9. 当前状态
+
+当前仓库为 MVP 骨架版本，重点展示产品方向、技术路径与后续扩展能力。后续将继续补充：
+
+政策抓取与解析模块
+
+向量检索模块
+
+企业画像系统
+
+申报文书生成模块
+
+10. Founder
+
+Sadie
+PKU Sociology | AI + Finance + Policy

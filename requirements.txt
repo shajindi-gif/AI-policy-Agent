@@ -1,6 +1,9 @@
-fastapi
-uvicorn
+pandas
+numpy
+matplotlib
+tushare
+vectorbt
+empyrical
 sqlalchemy
 psycopg2-binary
-pydantic
-python-multipart
+python-dotenv

@@ -6,3 +6,28 @@ __pycache__/
 .vscode/
 node_modules/
 docker_data/
+# local merge buffers
+_incoming/
+
+# runtime files
+logs/
+reports/
+docker_data/
+*.log
+
+# python
+__pycache__/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# node
+node_modules/
+.next/
+dist/
+build/
+
+# secrets
+.env
+.env.local

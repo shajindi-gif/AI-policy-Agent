@@ -1,0 +1,20 @@
+[
+  {
+    "name": "示例机器人公司",
+    "city": "上海",
+    "industry": "机器人",
+    "stage": "A轮",
+    "revenue_range": "1000-5000万",
+    "employees_range": "50-200",
+    "tags": "专精特新,高新技术,智能制造"
+  },
+  {
+    "name": "示例工业软件公司",
+    "city": "上海",
+    "industry": "工业软件",
+    "stage": "天使",
+    "revenue_range": "<1000万",
+    "employees_range": "10-50",
+    "tags": "工业互联网,制造业数字化"
+  }
+]

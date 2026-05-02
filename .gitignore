@@ -31,3 +31,20 @@ build/
 # secrets
 .env
 .env.local
+
+_incoming/
+logs/
+reports/
+docker_data/
+*.log
+__pycache__/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+node_modules/
+.next/
+dist/
+build/
+.env
+.env.local

@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "policy_name": {"type": "string"},
+    "region": {"type": "string"},
+    "match_score": {"type": "number"},
+    "eligibility": {"type": "string"},
+    "missing_materials": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "deadline": {"type": "string"},
+    "authority": {"type": "string"},
+    "next_action": {"type": "string"}
+  }
+}

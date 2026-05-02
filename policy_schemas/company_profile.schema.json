@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "company_name": {"type": "string"},
+    "registration_city": {"type": "string"},
+    "district": {"type": "string"},
+    "industry": {"type": "string"},
+    "company_type": {"type": "string"},
+    "founded_date": {"type": "string"},
+    "employees": {"type": "number"},
+    "social_security_count": {"type": "number"},
+    "revenue": {"type": "number"},
+    "rd_expense": {"type": "number"},
+    "ip_count": {"type": "number"},
+    "office_park": {"type": "string"}
+  }
+}

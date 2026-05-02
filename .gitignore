@@ -48,3 +48,13 @@ dist/
 build/
 .env
 .env.local
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+.venv/
+venv/
+__pycache__/
+*.pyc
